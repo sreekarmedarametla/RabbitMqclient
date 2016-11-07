@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="adverisement" ng-controller="advertisementcontainer">
+    <div class="padding">
+        <div class ="form-group">
+            <label>productname</label>
+            <input type="text" class="form-control"  placeholder="Enter name of your product" ng-model="productname">
+        </div>
+        <div class="form-group">
+            <label>productdescription</label>
+            <input type="text" class="form-control"  placeholder="enter your product description" ng-model="productdescription">
+        </div>
+        <div class="form-group">
+            <label>sellerinformation</label>
+            <input type="text" class="form-control" placeholder="seller information" ng-model="sellerinformation">
+        </div>
+        <div class="form-group">
+            <label>productprice</label>
+            <input type="text" class="form-control"  placeholder="product price" ng-model="productprice">
+        </div>
+        <div class="form-group">
+            <label>quantity</label>
+            <input type="text" class="form-control" placeholder="enter quantity" ng-model="quantity">
+        </div>
+        <div class="form-group">
+            <label>SellerEmail</label>
+            <input type="text" class="form-control" placeholder="SellerEmail" ng-model="selleremail">
+        </div>
+        <div class="form-group">
+            <button type="submit" ng-click="postadd();" >PostAdd</button>
+         </div>
+    </div>
+</div>
+</body>
+</html>

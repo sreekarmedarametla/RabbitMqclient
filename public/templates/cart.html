@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container" ng-controller="cartcontroller" ng-init="loadCart();">
+    <br>
+    <p class="header">Welcome to Cart</p>
+    <div class="row">
+        <table class="table ">
+            <thead>
+            <tr>
+                <th >Image</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Itemprice</th>
+                <th>Delete from cart</th>
+            </tr>
+            </thead>
+            <tbody ng-repeat="value in cartData">
+            <tr>
+                <td><img src="{{value.image}}" style="width:70px; height:70px"></td>
+                <td> {{value.model}}{{value.item}}</td>
+                <td><input type="number" ng-change="calculateTotal(quantitySelc,value)" ng-model="quantitySelc" min="1"/></td>
+                <td><input type="text" readonly value="{{value.productprice*quantitySelc}}"/> </td>
+                <td><input type="button" style="background-color: chocolate" value="delete"  ng-click="deleteItem(value,quantitySelc);"> </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div style="margin:auto">
+            <label>Total Price</label>
+            <input type="text"  readonly value="{{totalprice}}">
+        </div>
+      </div>
+
+
+</div>
+</body>
+</html>

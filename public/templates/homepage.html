@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div  ng-controller="home" ng-init="loadData();">
+    <div  class="row" ng-controller="product"  style="margin-left:20px;">
+        <div class="col-md-3" ng-repeat="product in data"  >
+            <br>
+            <img src="{{product.image}}" style="height:150px; width:150px">
+            <div class="desc">
+              <strong>{{product.item}}</strong>
+                <br>
+                <strong>model </strong>:{{product.model}}
+                <br>
+                <strong>Price</strong>:{{product.productprice}}
+             </div>
+            <input style="margin-left: 20px" type="submit"  value="Add to Cart" class="btn btn-success" ng-click="getProduct(product)">
+        </div>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

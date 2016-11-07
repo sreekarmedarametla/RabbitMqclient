@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> welcome to ebay</title>
+</head>
+<body>
+<nav class="navbar navbar-default" ng-controller="logout">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="homepage">Ebay</a>
+        <ul class="nav navbar-nav navbar-left">
+            <li><a ui-sref="Electronics">Electronics</a></li>
+            <li><a ui-sref="Fashion">Fashion</a></li>
+        </ul>
+    </div>
+    <div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="profile">About<span class="about"></span></a></li>
+        <li><a ui-sref="orderhistory">UserHistory<span class="about"></span></a></li>
+        <li><a ui-sref="biddingproducts">Bid a Product</a></li>
+        <li><a ui-sref="cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+        <li><a ng-click="logout();"> <span class="glyphicon glyphicon-user"></span>Logout</a></li>
+
+    </ul>
+   </div>
+</nav>
+</body>
+</html>

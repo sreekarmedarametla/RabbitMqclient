@@ -1,0 +1,62 @@
+
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<body >
+<div class="page-width">
+    <div class="global-navigation">
+        <a href=""  id="gh-la">
+            <img role="presentation" width="250" height="200" style="clip:rect(47px, 118px, 95px, 0px);
+					position:absolute; 
+					top:5px;left:600px " alt=""
+                 src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"
+                 id="gh-logo">
+        </a>
+    </div>
+    <div class="centralarea" ng-controller="register">
+        <div class="bdcnt">
+            <div class="tt1">
+                <div class="sgnt">
+					   <span class="sp spr ar" id="sar">
+					   </span>
+                    <span class="ml53 tx"><a href="/">Signin</a></span>
+                </div>
+                <span class="shd" id="shd" style="left:3%"></span>
+                <div id="regTab" tabindex="0" role="tab" class="rgt brb"
+                     aria-expanded="false">
+                    <span class="sp spr pl" id="rar"></span>
+                    <span class="ml51 tx"><a href="/register">Register</a></span></div>
+            </div>
+            <br>
+            <form  class="form1">
+                <div class="form-group">
+                    <label> <strong>firstname</strong> </label>
+                    <input type="text" class="form-control" name="firstname" placeholder="firstname" ng-model="forminfo.firstname">
+                </div>
+                <div class="form-group">
+                    <label><strong>lastname</strong></label>
+                    <input type="text" class="form-control" name="lastname" placeholder="lastname" ng-model="forminfo.lastname">
+                </div>
+                <div class="form-group">
+                    <label><strong>Password</strong></label>
+                    <input type="password"  class="form-control"  name="password"   placeholder="Enter your password" ng-model="forminfo.password">
+                </div>
+                <div class="form-group">
+                    <label ><strong>Email</strong></label>
+                    <input type="email" class="form-control"  name="email"   placeholder="Enter your email" ng-model="forminfo.email">
+                </div>
+                <input type="submit" class="btn btn-success" ng-click="signupformsubmit();"
+                       value="signup"/>
+                <span ng-show="fieldsRequired">{{fieldsRequired}}</span>
+                <span ng-show="invalidPassword">{{invalidPassword}}</span>
+                <span ng-show="userAdded">{{userAdded}}</span>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+

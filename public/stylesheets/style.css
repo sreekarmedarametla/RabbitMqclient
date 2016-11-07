@@ -1,0 +1,171 @@
+
+
+body {
+  background: url("http://localhost:3000/images/imgbg.jpg") repeat 0 0 #f8f8f8;;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.desc
+{
+  margin-left:20px;
+  padding:2px;
+  border: 1px solid #E5E4E2;
+  border-radius: 5px;
+  width:100px;
+  height:100px;
+  margin-bottom: 5px;
+  text-align:center;
+  font-family: "Baskerville Old Face";
+}
+
+/* login page css::
+*/
+
+.page-width{
+  width:100%;
+  margin:auto;
+}
+.global-navigation{
+  margin: 32px 0 23px;
+  margin-top:40px;
+}
+
+.bdcnt {
+  width: 100%;
+  margin: auto;
+  background:none repeat scroll 0 0 #fff;
+  border-radius: 3px;
+}
+
+.centralarea{
+  margin-top:100px;
+
+}
+
+span{
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.tx {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  font-weight: 200;
+}
+
+.ml53 {
+  margin: 0 0 0 13%;
+}
+.ml51 {
+  margin: 0 0 0 12%;
+}
+
+.bdcnt{
+  margin:auto;
+  width:400px;
+  height:400px;
+}
+
+
+.spr{
+  display:block;
+  background-image: url("http://localhost:3000/images/login.png");
+
+
+}
+.ar {
+  background-position: 0 -75px;
+}
+
+.sp {
+  display: inline-block!important;
+  background-repeat: no-repeat;
+  width: 30px;
+  position: relative;
+  height: 30px;
+  left: 9%;
+  bottom: -11px;
+}
+.pl {
+  background-position: -95px -76px;
+}
+
+.sgnt {
+  float: left;
+  height: 45px;
+  width: 49%;
+  color: #555;
+
+}
+
+.shd {
+  position: relative;
+  width: 1%;
+  background-color: #d7d7d7;
+  border: 1px solid #d7d7d7;
+  height: 38px;
+  margin: 5px 0 0 0;
+  display: inline-block;
+}
+
+.brb {
+  background-color: #eee;
+  border: 1px solid #d6d6d6;
+  width: 48%!important;
+  color: #0654ba!important;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.rgt {
+  height: 45px;
+  float: right;
+  width: 49%;
+  color: #555;
+}
+
+
+
+
+
+
+/*profile page styling*/
+
+
+.profilecontainer{
+  width:500px;
+  height:400px;
+  margin:auto;
+  border-radius:10px;
+
+}
+.padding{
+
+  padding:30px;
+}
+
+.add{
+  padding:25px;
+  background: goldenrod;
+  border:1px solid lightblue;
+  border-radius:1px;
+
+}
+
+
+/*header*/
+  .navbar navbar-default{
+    background: burlywood;
+  }
+
+
+
